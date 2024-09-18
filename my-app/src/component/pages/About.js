@@ -6,8 +6,8 @@ function About() {
     return (
         <nav>
         <ul>
-        <li><Link to="/about">Home</Link></li>
-        <li><Link to="/">About</Link></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
         </ul>
         </nav>
     );
