@@ -10,19 +10,21 @@ import NotFound from './component/pages/NotFound.js';
 
 function App() {
   return (
-    <div class="App-header">
+    <body class="App">
       <div>
-        <Router>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/Contact" element={<Contact />} />
-            <Route path="/notfound" element={<NotFound />} />
-            <Route path="/counter" element={<Counter/>}/>
-          </Routes>
-        </Router>
+        <div>
+          <Router>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/Contact" element={<Contact />} />
+              <Route path="/notfound" element={<NotFound />} />
+              <Route path="/counter" element={<Counter/>}/>
+            </Routes>
+          </Router>
+        </div>
       </div>
-    </div>
+    </body>
     
   );
 }

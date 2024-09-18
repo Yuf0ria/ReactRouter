@@ -4,14 +4,17 @@ import { Link } from 'react-router-dom';
 
 function NotFound() {
     return (
-        <nav>
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/Contact">Contact</Link></li>
-                <li><Link to="/counter">Counter</Link></li>
+        <body>
+            <nav class="navbar">
+            <ul class="navbar-nav">
+                <li><Link to="/" class="nav-item">Home</Link></li>
             </ul>
-        </nav>
+            </nav>
+
+            <div class="header">
+                <h1 class ="large">404 page not Found</h1>
+            </div>
+        </body>
     );
 }
 

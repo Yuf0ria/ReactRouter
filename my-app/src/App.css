@@ -1,24 +1,81 @@
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+:root{
+  font-size: 16px;
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+}
+
+.App{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 5rem;
+  padding: 1rem;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-ul{
-  list-style-type: none;
+body{
+  color: white;
+  background-color: black;
   margin: 0;
   padding: 0;
 }
 
+body::-webkit-scrollbar{
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #805f7d;
+}
+
 a{
   text-decoration: none;
+}
+
+/*navbar*/
+
+.navbar{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.navbar-nav{
+  list-style: none;
+  display: inline;
+  
+}
+
+.nav-item{
+  color: var(--text-primary);
+  line-height: 40px;
+  display: block;
+  font-size: 18px;
+  position: relative;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.header{
+  justify-content: center;
+  text-align: center;
+  margin: 40px;
+}
+
+
+.large{
+  text-align: center;
+  font-size: 100px;
 }

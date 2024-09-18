@@ -4,14 +4,22 @@ import { Link } from 'react-router-dom';
 
 function About() {
     return (
-        <nav>
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/Contact">Contact</Link></li>
-                <li><Link to="/notfound">Not Found</Link></li>
-                <li><Link to="/counter">Counter</Link></li>
-            </ul>
-        </nav>
+        <body>
+            <nav class="navbar">
+                <ul class="navbar-nav">
+                    <li><Link to="/" class="nav-item">Home</Link></li>
+                    <li><Link to="/Contact" class="nav-item">Contact</Link></li>
+                    <li><Link to="/notfound" class="nav-item">NotFound</Link></li>
+                    <li><Link to="/counter" class="nav-item">Counter</Link></li>
+                </ul>
+            </nav>
+
+            <div class="header">
+                <h1>This is a webpage using React.</h1>
+            </div>
+
+        </body>
+        
     );
 }
 
