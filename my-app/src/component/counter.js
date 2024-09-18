@@ -9,12 +9,13 @@ function Counter() {
         <nav>
         <ul>
         <li><Link to="/">Home</Link></li>
+        <li><Link to="/Contact">Contact</Link></li>
+        <li><Link to="/notfound">Not Found</Link></li>
         <li><Link to="/about">About</Link></li>
-        <li><Link to="/counter">Counter</Link></li>
         </ul>
         </nav>
 
-        <div>
+        <div class="">
         <p>You clicked {count} times</p>
         <button onClick={() => setCount(count + 1)}>Click me</button>
         <button onClick={() => setCount(prev => prev + 1)}>Increment</button>
