@@ -1,3 +1,5 @@
+
+
 :root{
   font-size: 16px;
   --text-primary: #b6b6b6;
@@ -6,21 +8,22 @@
   --bg-secondary: #141418;
 }
 
-.App{
-  display: flex;
-  margin-left: 5rem;
-  padding: 1rem;
+div{
+  width: 100%;
 }
+
 
 .App-link {
   color: #61dafb;
+  margin: 0;
+  padding: 0;
 }
 
 body{
-  color: white;
-  background-color: black;
-  margin: 0;
-  padding: 0;
+  color: black;
+  background-color: white;
+  margin-left: 0.5rem;
+  padding: 1rem;
 }
 
 body::-webkit-scrollbar{
@@ -41,32 +44,25 @@ a{
 
 /*navbar*/
 
+.navigation{
+  display: inline-block;
+  background-color: aquamarine;
+  padding: 20px;
+}
+
 .navbar{
-  position: relative;
   top: 0;
   left: 0;
-  width: 100%;
-  padding: 20px 10%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-  display: inline-block;
 }
 .navbar-nav{
   list-style: none;
-  display: inline;
-  
 }
 
 .nav-item{
   color: var(--text-primary);
   line-height: 40px;
-  display: block;
   font-size: 18px;
-  position: relative;
   font-weight: 500;
-  margin-left: 40px;
 }
 
 .header{
@@ -79,4 +75,10 @@ a{
 .large{
   text-align: center;
   font-size: 100px;
+}
+
+Button{
+  Padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
 }
